@@ -31,6 +31,15 @@ typedef struct listint_s
 void bubble_sort(int *array, size_t size);
 
 /**
+ * insertion_sort_list - Sorts a doubly linked list of integers
+ *                       in ascending order using Insertion sort.
+ * @list: Pointer to the head of the list
+ *
+ * Description: Prints the list after each swap. Swaps nodes, not values.
+ */
+void insertion_sort_list(listint_t **list);
+
+/**
  * print_array - Prints an array of integers
  * @array: Pointer to the array to print
  * @size: Number of elements in the array
