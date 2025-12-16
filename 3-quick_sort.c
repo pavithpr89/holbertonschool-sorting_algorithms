@@ -24,7 +24,7 @@ for (j = low; j < high; j++)
 {
 if (array[j] < pivot)
 {
-if (i != j)
+if (i != j && array[i] != array[j])
 {
 temp = array[i];
 array[i] = array[j];
@@ -35,7 +35,7 @@ i++;
 }
 }
 
-if (i != high)
+if (i != high && array[i] != array[high])
 {
 temp = array[i];
 array[i] = array[high];
